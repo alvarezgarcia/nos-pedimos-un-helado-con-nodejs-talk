@@ -1,0 +1,209 @@
+# Tomemos un helado con NodeJS
+
+<img src="https://i.giphy.com/media/nxscd2YGVf6xi/giphy.webp" />
+
+---
+
+## Sebastián Alvarez
+## Pergamino, Provincia de Buenos Aires
+## Workast
+
+---
+
+# Veamos una típica app (móvil, webapp, etc)
+
+---
+
+<img src="./static-dynamic.png" />
+
+---
+
+# ¿Contenido dinámico?
+<img src="https://media1.tenor.com/images/c1779cc711eec61ef3cd322d569e005f/tenor.gif" />
+
+---
+
+## Ejemplos de contenido dinámico:
+
+ - Posts
+ - Tweets
+ - Noticias
+
+---
+
+## ¿Quién le da a una página web este contenido dinámico?
+### ¿Quién se lo sirve?
+
+---
+
+# Un servicio web
+
+---
+
+# Vamos con un ejemplo
+## Sitio de noticias
+
+---
+
+## Sitio de noticias
+### Contenido estático
+ - Título
+ - Logo
+ - Colores de fondo
+
+---
+
+## Sitio de noticias
+### Contenido dinámico
+ - Las noticias
+ - Fotos
+ - Videos
+
+---
+
+#### ¿Qué pasa cuando entramos al sitio de noticias?
+
+1. www.sitio.de.noticias.com
+2. Contenido estático
+3. Contenido dinámico
+4. <img width="10%" height="10%" src="https://ih0.redbubble.net/image.221516865.7315/pp,840x830-pad,750x1000,f8f8f8.jpg" />
+5. Sitio listo para usar
+
+---
+
+## ¿Qué pasaría sin un servicio web?
+
+ - Siempre veríamos las mismas noticias
+ - Vería noticias que no me interesan
+ - Necesito darle al F5 para tener nuevas noticias
+
+---
+
+# Vamos con otro ejemplo
+## HeladApp
+
+---
+
+### ¿Cuál es el contenido estático?, ¿y el dinámico?
+
+<img src="./heladapp-1.png" />
+<img src="./heladapp-2.png" />
+<img src="./heladapp-3.png" />
+
+---
+
+# Suficiente con ésto de estático y dinámico
+
+---
+
+# ¿Qué vamos a hacer en este taller?
+
+---
+
+### Vamos a armar el servicio web que "alimenta" nuestra **HeladApp** con sabores aleatorios de helado
+##### (De yapa vamos a permitir que se puedan agregar más sabores)
+
+---
+
+# Ingredientes
+
+ - NodeJS
+ - Editor de código
+ - Postman
+ - Navegador web
+
+---
+
+# Armemos nuestro primer webserver
+## Servidor que saluda
+
+---
+
+# Ahora armemos uno que tenga que ver con helados
+## Servidor que devuelve sabores si accesamos una URL
+
+---
+
+# Pausa
+
+---
+
+### Usando diferentes urls podemos hacer que nuestro servicio devuelva diferentes respuestas
+### Si bien es tentador
+### ...
+## Vamos a tener un desorden importante en poco tiempo
+###
+
+---
+
+## Hay solución para el desorden:
+# Rest
+
+---
+
+# Rest
+ - Organizar
+ - Acceder
+ - URLs como ubicación de recursos
+
+---
+
+# ¿Cómo usamos Rest para nuestro servicio web?
+
+---
+
+## URLs (o también llamados Endpoints)
+
+#### /dameTodos -> /helados
+#### /dameAleatorio -> /helados/aleatorio
+
+---
+
+# Bonus track
+
+---
+
+## Hasta hora solo trajimos información
+## ¿Qué hay de agregar?
+
+---
+
+# Verbos HTTP
+ - GET (traer información)
+ - POST (subir información)
+
+---
+
+## ¿Cómo quedan nuestros endpoints?
+
+#### /helados (GET)
+#### /helados/aleatorio (GET)
+#### /helados (POST)
+
+---
+
+## /helados (GET) 
+## /helados (POST)
+<img src="https://media1.tenor.com/images/c1779cc711eec61ef3cd322d569e005f/tenor.gif" />
+
+---
+
+## Desde la perspectiva del servicio
+ - GET (devuelve información)
+ - POST (recibe información)
+
+---
+
+# Bien, ¿y ahora?
+
+---
+
+# Mejoras
+
+- ¿Cómo evito que suban un sabor repetido?
+- ¿Cómo elimino un sabor?
+- ¿Qué otras cosas se pueden mejorar?
+
+---
+
+# Gracias
